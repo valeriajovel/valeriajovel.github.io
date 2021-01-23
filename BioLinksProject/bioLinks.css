@@ -1,0 +1,85 @@
+:root{
+  --background-color: #d2b2a7;
+  --link-background: #efe2de;
+  --text-color: #2f4869;
+  --text-highlight: #93aac8;
+}
+
+body{
+  background-image: url('backgroundimage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-family: 'Bodoni Moda', serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.circle-shape {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid var(--link-background);
+  margin: 0 auto;
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+a {
+  color: var(--link-background);
+  text-decoration: none;
+}
+
+.ig-link {
+  margin: 10px 0;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.link-list-item {
+  border: 1px solid var(--text-color);
+  box-sizing: border-box;
+  margin: 20px auto;
+  color: var(--text-color);
+  padding: 15px;
+  text-align: center;
+  transition: all 0.15s;
+  border-radius: 2px;
+}
+
+.highlighted,
+.link-list-item:hover,
+a:hover {
+  color: var(--text-highlight);
+  border-color: var(--text-highlight);
+  text-shadow: 0 0 2em var(--text-highlight);
+}
+
+.icon-list-img {
+  height: 50px;
+  width: 50px;
+  margin: 3px;
+}
+
+.linkbackground{
+  background: var(--link-background);
+}
+
+.text{
+  background: var(--text-color);
+}
